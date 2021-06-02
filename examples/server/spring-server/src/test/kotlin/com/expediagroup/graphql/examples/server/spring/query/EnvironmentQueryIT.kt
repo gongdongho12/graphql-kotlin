@@ -20,6 +20,7 @@ import com.expediagroup.graphql.examples.server.spring.DATA_JSON_PATH
 import com.expediagroup.graphql.examples.server.spring.GRAPHQL_ENDPOINT
 import com.expediagroup.graphql.examples.server.spring.GRAPHQL_MEDIA_TYPE
 import com.expediagroup.graphql.examples.server.spring.verifyOnlyDataExists
+import org.junit.jupiter.api.Assertions.assertNull
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
 import org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS
@@ -28,7 +29,6 @@ import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWeb
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.http.MediaType.APPLICATION_JSON
 import org.springframework.test.web.reactive.server.WebTestClient
-import kotlin.test.assertNull
 
 @SpringBootTest
 @AutoConfigureWebTestClient
